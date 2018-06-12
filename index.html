@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/lib/underscore.js"></script>
+    <script src="assets/lib/backbone.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var HelloView = Backbone.View.extend({
+          el: $('body'),
+          initialize: function() {
+            this.render();
+          },
+          render: function() {
+            $(this.el).append("<h1>Hello World !!</h1>");
+          }
+        });
+        var helloView = new HelloView();
+      });
+    </script>
+  </head>
+  <body></body>
+</html>
